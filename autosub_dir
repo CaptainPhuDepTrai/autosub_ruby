@@ -1,0 +1,5 @@
+arr = Dir.entries('.').select { |elem| elem.include? ".mp4" }
+arr.each { |elem|
+  puts "\nXu li file #{elem}"
+  system("autosub \"#{elem}\"")
+}
